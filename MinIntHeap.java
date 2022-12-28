@@ -90,7 +90,7 @@ public class MinIntHeap {
   }
 
   public void heapifyDown() {
-    int index = size - 1;
+    int index = 0;
     while (hasLeftChild(index)) {
       int smallerChildIndex = getLeftChildIndex(index);
       if (hasRightChild(index) && rightChild(index) < leftChild(index)) {
